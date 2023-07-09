@@ -13,7 +13,7 @@ end PC;
 
 architecture dataflow of PC is
 begin
-	process(clk,reset)       --!!! Change PC when clock rises
+	process(clk,reset)       --PC changes when clock rises
 	begin 
 		if (reset='1') then                  
 			pc_current <= x"00000000";
