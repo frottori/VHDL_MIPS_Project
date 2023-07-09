@@ -1,5 +1,11 @@
 # MIPS Processor in VHDL (Single Cycle)
-A VHDL implementation of the MIPS Processor with 16 Registers (Register File) and 16 Memory slots (Data Memory) of 32-bit each, simple operations in ALU (Addtition, Subtraction, Branch etc.) that supports Type R and Type I operations. <br>
+A VHDL implementation of the MIPS Processor with : <br>
+* 16 Registers of 32-bit (Register File) <br>
+* 16 Memory Slots of 32-bit (Data Memory) <br>
+* simple operations in ALU (Addtition, Subtraction, Branch etc.) <br>
+* Type R and Type I operations <br>
+* PC increases by 1 <br>
+*  Inital Address is 0x00000000 <br>
 <br>
 ![Mips Processor](MIPS.png) <br>
 ## Program for Execution (Instruction Memory):
