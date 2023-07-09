@@ -13,4 +13,4 @@ addi $4, $4, 1 <br>
 addi $5, $5, -1 <br>
 bne $5,$0,L1 <br>
 ##Wave of Execution in Modelsim
-![Mips Wave](MIPS_WAVE.png) <br>
+![Mips Wave](MIPS_WAVE.jpg) <br>
