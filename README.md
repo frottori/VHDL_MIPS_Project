@@ -1,4 +1,4 @@
-# MIPS Processor in VHDL
+# MIPS Processor in VHDL (Single Cycle)
 A VHDL implementation of the MIPS Processor with 32-bit and 16 space Data Memory and Register File, simple operations in ALU (Addtition, Subtraction, Branch etc.) that supports Type R and Type I operations. <br>
 <br>
 ![Mips Processor](MIPS.png) <br>
