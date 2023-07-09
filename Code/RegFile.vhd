@@ -31,7 +31,7 @@ begin
 	begin
 	
 	if(rst='1') then
-		for i in 0 to (size-1) loop   --μηδενίζει καταχωρητές
+		for i in 0 to (size-1) loop   
 			reg_file(i) <=(others => '0');
 		end loop;
  	elsif (rising_edge(clk)) then 
