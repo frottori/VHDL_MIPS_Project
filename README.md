@@ -1,1 +1,2 @@
-# VHDL_MIPS_Project
+# MIPS Processor in VHDL
+
