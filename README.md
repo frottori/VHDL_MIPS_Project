@@ -5,7 +5,7 @@ A VHDL implementation of the MIPS Processor with : <br>
 * simple operations in ALU (Addtition, Subtraction, Branch etc.) <br>
 * Type R and Type I operations <br>
 * PC increases by 1 <br>
-*  Inital Address is 0x00000000 <br>
+*  Inital Address is 0x00000000 <br> <br>
 ![Mips Processor](MIPS.png) <br>
 ## Program for Execution (Instruction Memory):
 addi $2, $2, 0 <br>
