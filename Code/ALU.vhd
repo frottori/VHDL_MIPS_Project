@@ -31,7 +31,7 @@ begin
 	end process;
 	
 	ALUout1 <= res;
-	zero <= '0' when res=x"00000000" else '1';  --για το bne
+	zero <= '0' when res=x"00000000" else '1';
 	
 end behavioral;
 
