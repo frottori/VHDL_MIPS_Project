@@ -4,8 +4,8 @@ A VHDL implementation of the MIPS Processor with : <br>
 * 16 Memory Slots of 32-bit (Data Memory) <br>
 * simple operations in ALU (Addtition, Subtraction, Branch etc.) <br>
 * Type R and Type I operations <br>
-* PC increases by 1 <br>
-*  Inital Address is 0x00000000 <br> <br>
+* PC typically increases by 1 <br>
+*  Initial Address is 0x00000000 <br> <br>
 ![Mips Processor](MIPS.png) <br>
 ## Program for Execution (Instruction Memory):
 addi $2, $2, 0 <br>
