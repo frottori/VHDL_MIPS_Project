@@ -1,6 +1,6 @@
 # MIPS Processor in VHDL
+A VHDL implementation of the MIPS Processor with 32-bit and 16 space Data Memory and Register File, simple operations in ALU (Addtition, Subtraction, Branch etc.) that supports Type R and I operations. <br>
 ![Mips Processor](MIPS.png) <br>
-A VHDL implementation of the MIPS Processor with 32-bit and 16 space Data Memory and Register File, simple operations in ALU (Addtition, Subtraction, Branch etc.) that supports Type R and I operations. 
 ## Program for Execution:
 addi $2, $2, 0 <br>
 addi $2, $4, 0 <br>
