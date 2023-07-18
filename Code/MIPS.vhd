@@ -3,12 +3,13 @@ use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
 use ieee.numeric_std.all;
 
-entity MIPS is port(
-clk : in std_logic;
-reset : in std_logic);
+entity MIPS is 
+	port(
+		clk : in std_logic;
+		reset : in std_logic);
 end MIPS;
 
-architecture behavioral of MIPS is
+architecture structural of MIPS is
 component ALU 
 	port (
 		 ALUin1: in std_logic_vector(31 downto 0); 
@@ -21,7 +22,7 @@ component ALU
 component RegFile
 	generic(
 	 w : natural := 5;     -- number of address bits
-	 b : natural := 32;    --number of bits 
+	 b : natural := 32;    -- number of bits 
 	 size : natural := 16  -- number of registers (to the register file)
 	);
 	port (
@@ -112,7 +113,7 @@ constant N1 : natural := 5;
 constant N2 : natural := 32;
 signal pc_current : std_logic_vector (31 downto 0); 
 signal pc_next : std_logic_vector (31 downto 0);
-signal instruct : std_logic_vector (31 downto 0); --Instruction bits
+signal instruct : std_logic_vector (31 downto 0); -- Instruction bits
 signal	RegDst :  std_logic;
 signal	Branch :  std_logic;
 signal	MemRead :  std_logic;
@@ -121,13 +122,13 @@ signal  ALUOp :  std_logic_vector (1 downto 0);
 signal  MemWrite : std_logic;
 signal  ALUSrc :  std_logic;
 signal  RegWrite :  std_logic;
-signal  Write_Reg : std_logic_vector(4 downto 0); --εξοδος 5-Mux
+signal  Write_Reg : std_logic_vector(4 downto 0); -- output 5-bit-Mux
 signal se_out : std_logic_vector (31 downto 0);
 signal Write_Data : std_logic_vector(31 downto 0);
 signal reg1,reg2 : std_logic_vector (31 downto 0);
 signal ALUIN_2 : std_logic_vector (31 downto 0);
-signal ALU_Control : std_logic_vector(3 downto 0); --output of alu controller
-signal ALU_out : std_logic_vector(31 downto 0); --adress of data memory
+signal ALU_Control : std_logic_vector(3 downto 0); -- output of ALU Controller
+signal ALU_out : std_logic_vector(31 downto 0); -- address of Data Memory
 signal zero : std_logic;
 signal readData :std_logic_vector(31 downto 0);
 signal y,z : std_logic_vector(31 downto 0);
@@ -247,4 +248,4 @@ begin
 			   s => and_out, 
 			   d => pc_next );
 	
-end behavioral;
+end structural;
