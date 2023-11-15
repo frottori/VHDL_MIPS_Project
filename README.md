@@ -8,6 +8,7 @@ A VHDL implementation of the MIPS Processor : <br>
 *  Initial Address is 0x00000000 <br> <br>
 ![Mips Processor](MIPS.png) <br>
 ## Program for Execution (Instruction Memory):
+```vhdl
 addi $2, $2, 0 <br>
 addi $2, $4, 0 <br>
 addi $3, $0, 1 <br>
@@ -18,5 +19,6 @@ addi $3, $3, 1 <br>
 addi $4, $4, 1 <br>
 addi $5, $5, -1 <br>
 bne $5,$0,L1 <br>
+```
 ## Wave in Modelsim
 ![Mips Wave](MIPS_WAVE.jpg) <br>
